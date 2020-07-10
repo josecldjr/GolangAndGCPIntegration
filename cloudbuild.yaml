@@ -1,0 +1,18 @@
+steps:
+  - id: "Criando build da imagem"
+    name: "gcr.io/cloud-builders/docker"
+    args: ["docker", "build", "-t", "$PROJECT_ID/golangsum", "Dockerfile"]
+
+  - id: "Buildando imagem"
+    name: "gcr.io/cloud-builders/docker"
+    args:
+      ["docker", "build", "-t", "gcr.io/$PROJECT_ID/golangsum", "Dockerfile"]
+
+  - id: "Iniciando container"
+    name: "gcr.io/cloud-builders/docker"
+    args:
+      ["docker", "run", "-it", "gcr.io/$PROJECT_ID/golangsum", "Dockerfile"]
+
+  - id: "Executando testes unitários"
+    name: "gcr.io/cloud-builders/docker"
+    args: ["docker", "exec", "gcr.io/cloud-builders/docker", "cd go/src && go test"]
