@@ -10,5 +10,5 @@ func main() {
 	var valueB = 5
 
 	sumResult := sum(valueA, valueB)
-	fmt.Printf("O resultado da soma de %v e %v é de %v", valueA, valueB, sumResult)
+	fmt.Printf("O resultado da soma de %v e %v é de %v !", valueA, valueB, sumResult)
 }
