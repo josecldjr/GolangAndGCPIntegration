@@ -16,7 +16,7 @@ steps:
 
   - id: "Listando imagens"
     name: "gcr.io/cloud-builders/docker"
-    args: [image", "ls"]
+    args: ["image", "ls"]
 
   - id: "Iniciando container"
     name: "gcr.io/cloud-builders/docker"
