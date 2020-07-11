@@ -22,7 +22,8 @@ steps:
     name: "gcr.io/cloud-builders/docker"
     args: 
     # ["docker", "run", "-t", "gcr.io/$PROJECT_ID/golangsum", "Dockerfile"]
-    - "run"     
+    - "run"
+    - -d     
     - -it
     - "--name"
     - "app"
