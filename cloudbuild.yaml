@@ -17,9 +17,9 @@ steps:
   - id: "Iniciando container"
     name: "gcr.io/cloud-builders/docker"
     args: 
-    # ["docker", "run", "-it", "gcr.io/$PROJECT_ID/golangsum", "Dockerfile"]
+    # ["docker", "run", "-t", "gcr.io/$PROJECT_ID/golangsum", "Dockerfile"]
     - "docker"
-    - "run"
+    - "run"     
     - "--name"
     - "app"
     - "gcr.io/$PROJECT_ID/golangsum"
