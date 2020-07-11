@@ -23,7 +23,7 @@ steps:
     args: 
     # ["docker", "run", "-t", "gcr.io/$PROJECT_ID/golangsum", "Dockerfile"]
     - "run"     
-    - -i 
+    - -it
     - "--name"
     - "app"
     - "gcr.io/$PROJECT_ID/golangsum"
