@@ -31,4 +31,4 @@ steps:
   - id: "Executando testes unitários"
     name: "gcr.io/cloud-builders/docker"
     args:
-      ["docker", "exec", "app", "cd go/src && go test"]
+      ["exec", "app", "cd go/src && go test"]
