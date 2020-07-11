@@ -1,7 +1,7 @@
 steps:
-  - id: "Criando build da imagem"
-    name: "gcr.io/cloud-builders/docker"
-    args: ["docker", "build", "-t", "$PROJECT_ID/golangsum", "Dockerfile"]
+  # - id: "Criando build da imagem"
+  #   name: "gcr.io/cloud-builders/docker"
+  #   args: ["docker", "build", "-t", "$PROJECT_ID/golangsum", "Dockerfile"]
 
   - id: "Buildando imagem"
     name: "gcr.io/cloud-builders/docker"
