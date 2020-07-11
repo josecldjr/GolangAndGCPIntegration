@@ -14,6 +14,10 @@ steps:
       - "gcr.io/$PROJECT_ID/golangsum:latest" 
       - "."
 
+  - id: "Listando imagens"
+    name: "gcr.io/cloud-builders/docker"
+    args: ["docker", "image", "ls"]
+
   - id: "Iniciando container"
     name: "gcr.io/cloud-builders/docker"
     args: 
