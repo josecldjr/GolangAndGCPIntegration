@@ -20,8 +20,6 @@ steps:
     # ["docker", "run", "-it", "gcr.io/$PROJECT_ID/golangsum", "Dockerfile"]
     - "docker"
     - "run"
-    - "-i"
-    - "-t"
     - "--name"
     - "app"
     - "gcr.io/$PROJECT_ID/golangsum"
